@@ -1,0 +1,239 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0px 170px;
+  /* margin: 0px auto; */
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+}
+
+.nav-logo img {
+  width: 60px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-logo p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.nav-list hr {
+  color: red;
+  border: none;
+  background-color: red;
+  width: 90%;
+  height: 3px;
+}
+
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-login img {
+  width: 30px;
+}
+.nav-login button {
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.nav-login button:active {
+  background-color: #f3f3f3;
+}
+.counter {
+  background-color: red;
+  font-size: 14px;
+  width: 20px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+  margin-top: -30px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* @media (max-width: 180px) {
+  .Navbar {
+    padding: 0px 130px;
+  }
+}
+
+@media (max-width: 1020px) {
+  
+  .Navbar {
+    padding: 0px 80px;
+  }
+} */
+
+.menu-icon {
+  display: none;
+  margin-left: 5px;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+.nav-logo a {
+  text-decoration: none;
+  color: black;
+  margin-top: 3px;
+}
+.cart {
+  margin-top: 10px;
+}
+.counter {
+  margin-top: -20px;
+}
+.sidebar-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-list li .link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Overlay styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1400;
+}
+
+@media (max-width: 1399.98px) {
+  /* CSS styles for extra large devices */
+
+  .Navbar {
+    padding: 0px 120px;
+  }
+}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media (max-width: 1199.98px) {
+  /* CSS styles for large devices */
+  .Navbar {
+    padding: 0px 90px;
+  }
+  .nav-list {
+    gap: 30px;
+  }
+}
+/* Medium devices (tablets, 768px to 991.98px) */
+@media (max-width: 991.98px) {
+  /* CSS styles for medium devices */
+  .Navbar {
+    padding: 0px 30px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .nav-login button {
+    padding: 5px 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767.98px) */
+@media (max-width: 760px) {
+  /* CSS styles for small devices */
+  .nav-list {
+    display: none;
+  }
+  .Navbar {
+    padding: 0px 20px;
+    margin: 0px;
+  }
+  .menu-icon {
+    display: block; /* Show the menu icon on mobile */
+  }
+
+  .nav-login button {
+    margin-right: 10px;
+  }
+  .nav-login {
+    gap: 5px;
+  }
+  .nav-logo img {
+    width: 30px;
+  }
+  .nav-login-btn {
+    display: none;
+  }
+  .nav-logo p {
+    font-size: 20px;
+  }
+}

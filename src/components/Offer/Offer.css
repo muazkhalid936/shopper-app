@@ -1,0 +1,146 @@
+.offer {
+  display: flex;
+  width: 90%;
+  background: linear-gradient(180deg, #fed1ff, #e1ffea22 60%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  height: 30vh;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.offer-left {
+  flex: 1;
+  margin-top: 20px;
+  padding-left: 10%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-left p {
+  font-size: 30px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.offer-right img {
+  width: 200px;
+  height: 30vh;
+}
+
+.offer-left button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 120px;
+}
+
+@media (max-width: 1300px) {
+  .offer-right img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    height: 70vh;
+  }
+  .offer-right img {
+    height: 70vh;
+  }
+  .offer-left {
+    gap: 5px;
+  }
+}
+@media (max-width:1024px){
+  .offer{
+    height: 30vh;
+  }
+  .offer-right img{
+    height: 25vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .offer {
+    height: 30vh;
+  }
+  .offer-right img {
+    height: 28vh;
+  }
+  .offer-left p {
+    font-size: 20px;
+  }
+  .offer-left {
+    gap: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .offer-left p {
+    font-size: 20px;
+  }
+  .offer {
+    height: 25vh;
+  }
+  .offer-right img {
+    height: 22vh;
+  }
+}
+
+@media(max-width:770px){
+  .offer-right img{
+    width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .offer-left p {
+    font-size: 10px;
+  }
+  .offer {
+    height: 20vh;
+  }
+  .offer-right img {
+    height: 15vh;
+    width: 100px;
+  }
+  .offer-left {
+    gap: 10px;
+  }
+  .offer-left button {
+    padding: 5px 5px;
+    font-size: 10px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .offer-left p {
+    font-size: 10px;
+  }
+  .offer {
+    height: 20vh;
+  }
+  .offer-left {
+    gap: 8px;
+  }
+  .offer-right img {
+    height: 20vh;
+    width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer-left p {
+    font-size: 10px;
+  }
+  .offer-left {
+    gap: 2px;
+  }
+  .offer-left button {
+    font-size: 8px;
+  }
+}
